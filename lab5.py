@@ -4,7 +4,7 @@ from re import S
 class Str(str):
     def __init__(self, object=''):
         self.data = object
-    def __new__(cls, content, **kwargs):
+    def __new__(cls, content):
         return str.__new__(cls, content)
     def is_contains_repeats(self,s):
         return s in self
